@@ -8,7 +8,12 @@ namespace Shop.Core.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly ISet<Product> _products = new HashSet<Product>();
+        private static readonly ISet<Product> _products = new HashSet<Product>
+        {
+            new Product("Laptop", "Electronics", 3000),
+            new Product("Jeans", "Trousers", 3000),
+            new Product("Hammer", "Tools", 3000)
+        };
         public Product Get(Guid id)
         => _products.SingleOrDefault(x => x.Id == id);
 

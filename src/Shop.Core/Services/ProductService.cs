@@ -4,10 +4,11 @@ using System.Text;
 using Shop.Core.DTO;
 using Shop.Core.Repositories;
 using System.Linq;
+using Shop.Core.Domain;
 
 namespace Shop.Core.Services
 {
-    class ProductService : IProductService
+    public class ProductService : IProductService
     {
         private IProductRepository _productRepository;
         public ProductService(IProductRepository productRepository)
@@ -27,7 +28,8 @@ namespace Shop.Core.Services
 
         public void Add(string name, string category, decimal price)
         {
-            throw new NotImplementedException();
+            var product = new Product(name, category, price);
+            _productRepository.Add(product);
         }
     }
 }
