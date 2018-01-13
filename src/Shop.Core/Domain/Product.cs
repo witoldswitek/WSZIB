@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shop.Core.Domain
 {
-    class Products
+    public class Product
     {
         public Guid Id { get; }
         public string Name { get; }
@@ -12,7 +12,7 @@ namespace Shop.Core.Domain
         public decimal Price { get; }
 
 
-        public Products(string name, string category, decimal price)
+        public Product(string name, string category, decimal price)
         {
             Id = Guid.NewGuid();
             Name = name;
