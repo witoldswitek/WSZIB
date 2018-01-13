@@ -26,5 +26,6 @@ namespace Shop.Web.Models
                 new SelectListItem{Text= "Trousers", Value= "Trousers"},
                 new SelectListItem{Text= "Electronics", Value= "Electronics"}
             };
+        public Guid Id { get; internal set; }
     }
 }
