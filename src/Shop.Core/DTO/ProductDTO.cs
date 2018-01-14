@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Shop.Core.DTO
 {
-    public class ProductDTO
+    public class ProductDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

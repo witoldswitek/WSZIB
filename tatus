@@ -1,0 +1,59 @@
+[33mcommit 037dbd1640b24590f50da2ff9fa5da6548bd9d38[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 17:00:31 2018 +0100
+
+    Added Services
+
+[33mcommit 177cd07ff6accf0146d1994255039222e9e8c7f3[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 16:38:21 2018 +0100
+
+    Added DTO
+
+[33mcommit ae7c09bab9c49b52cf21d47c86e2a387cfbf1f0a[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 15:26:26 2018 +0100
+
+    Added LINQ
+
+[33mcommit 5b7750b606b704f97eae21466a420c8af0b27c68[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 15:13:35 2018 +0100
+
+    Added possibility to add product
+
+[33mcommit cbb184d1bdb9ca5e23d9e54c552d1063500c49e5[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 12:53:28 2018 +0100
+
+    Added product list
+
+[33mcommit 7b05aaa30a1bc5be85966a9b7a194525faa7245b[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 12:18:33 2018 +0100
+
+    Project cleanup
+
+[33mcommit f1b7694ce594be9b5de0d0e3fac4ec921cdac5a9[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 12:03:40 2018 +0100
+
+    Frameworks
+
+[33mcommit d5f9322939338d3e4bcabd0595e6747941ef8f95[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 11:24:38 2018 +0100
+
+    Added projects
+
+[33mcommit 2a57580bcfa845174301b67b108e0eebbce84b00[m
+Author: Witold Michał Świtek <switek@student.wszib.edu.pl>
+Date:   Sat Jan 13 10:20:55 2018 +0100
+
+    Init
+
+[33mcommit a97dfb96209091d70327b187256eef1edc17ae9a[m
+Author: witoldswitek <witold.switek@gmail.com>
+Date:   Sat Jan 13 09:39:41 2018 +0100
+
+    Initial commit

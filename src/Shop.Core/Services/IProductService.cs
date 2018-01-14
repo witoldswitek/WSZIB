@@ -7,7 +7,9 @@ namespace Shop.Core.Services
 {
     public interface IProductService
     {
-        IEnumerable<ProductDTO> GetAll();
+        ProductDto Get(Guid id);
+        IEnumerable<ProductDto> GetAll();
         void Add(string name, string category, decimal price);
+        void Update(ProductDto product);
     }
 }
