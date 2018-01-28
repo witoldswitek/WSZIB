@@ -1,29 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using AutoMapper;
+using Shop.Core.Domain;
 using Shop.Core.DTO;
 using Shop.Core.Repositories;
-using Shop.Core.Domain;
+using System;
 
 namespace Shop.Core.Services
 {
-    class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-        public UserService(IUserRepository userRepository)
+        private readonly IMapper _mapper;
+
+        public UserService(IUserRepository userRepository,
+            IMapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
+
+        public UserDto Get(string email)
+        {
+            var user = _userRepository.Get(email);
+
+            return user == null ? null : _mapper.Map<UserDto>(user);
+        }
+
         public void Login(string email, string password)
         {
             var user = _userRepository.Get(email);
             if (user == null)
             {
-                throw new Exception($"User {user.Email} not found!");
+                throw new Exception($"User '{email}' was not found.");
             }
             if (user.Password != password)
             {
-                throw new Exception($"Wrong password!!!");
+                throw new Exception("Invalid password.");
             }
         }
 
@@ -32,9 +43,9 @@ namespace Shop.Core.Services
             var user = _userRepository.Get(email);
             if (user != null)
             {
-                throw new Exception($"User {user.Email} already exist.");
+                throw new Exception($"User '{email}' already exists.");
             }
-            var userRole = (Role) Enum.Parse(typeof(Role), role.ToString(), true);
+            var userRole = (Role)Enum.Parse(typeof(Role), role.ToString(), true);
             user = new User(email, password, userRole);
             _userRepository.Add(user);
         }

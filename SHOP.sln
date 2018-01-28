@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{96A76F06-5ED3-43CD-8B3F-ABCBC3D29AB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Web", "src\Shop.Web\Shop.Web.csproj", "{B1B64300-6AA4-4347-A434-391E2231C047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Web", "src\Shop.Web\Shop.Web.csproj", "{B1B64300-6AA4-4347-A434-391E2231C047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Core", "src\Shop.Core\Shop.Core.csproj", "{FBE09850-FC9E-4E0A-96E0-778BD5CCD273}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Core", "src\Shop.Core\Shop.Core.csproj", "{FBE09850-FC9E-4E0A-96E0-778BD5CCD273}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DB7BCE4B-086B-4606-B933-CEC17128606E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Tests", "test\Shop.Tests\Shop.Tests.csproj", "{CAF70E43-16B1-47EA-98F8-3962A10EA78E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,10 @@ Global
 		{FBE09850-FC9E-4E0A-96E0-778BD5CCD273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBE09850-FC9E-4E0A-96E0-778BD5CCD273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBE09850-FC9E-4E0A-96E0-778BD5CCD273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF70E43-16B1-47EA-98F8-3962A10EA78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF70E43-16B1-47EA-98F8-3962A10EA78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF70E43-16B1-47EA-98F8-3962A10EA78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF70E43-16B1-47EA-98F8-3962A10EA78E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B1B64300-6AA4-4347-A434-391E2231C047} = {96A76F06-5ED3-43CD-8B3F-ABCBC3D29AB6}
 		{FBE09850-FC9E-4E0A-96E0-778BD5CCD273} = {96A76F06-5ED3-43CD-8B3F-ABCBC3D29AB6}
+		{CAF70E43-16B1-47EA-98F8-3962A10EA78E} = {DB7BCE4B-086B-4606-B933-CEC17128606E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3779BE2F-55BA-4042-A388-7669D986506C}

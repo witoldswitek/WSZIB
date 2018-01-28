@@ -1,5 +1,4 @@
-﻿
-namespace Shop.Core.DTO
+﻿namespace Shop.Core.DTO
 {
     public enum RoleDto
     {

@@ -1,24 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using Shop.Core.Domain;
 using System.Linq;
+using Shop.Core.Domain;
 
 namespace Shop.Core.Repositories
 {
-    class UserRepository : IUserRepository
+    public class UserRepository : IUserRepository
     {
-        private static readonly ISet<User> _users = new HashSet<User>()
+        private readonly static ISet<User> _users = new HashSet<User>
         {
             new User("user@shop.com", "secret"),
-            new User("admin@shop.com", "secret", Role.Admin)            
+            new User("admin@shop.com", "secret", role: Role.Admin)
         };
-        public void Add(User user)
-            => _users.Add(user);
+
+        public User Get(Guid id)
+            => _users.SingleOrDefault(x => x.Id == id);
 
         public User Get(string email)
-            => _users.SingleOrDefault(x => string
-                                            .Equals(x.Email, email, StringComparison.InvariantCultureIgnoreCase));
-        
+            => _users.SingleOrDefault(x => 
+                string.Equals(x.Email, email, StringComparison.InvariantCultureIgnoreCase));
+
+        public void Add(User user)
+            => _users.Add(user);
     }
 }

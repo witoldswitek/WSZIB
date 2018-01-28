@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using Shop.Core.Domain;
 using Shop.Core.DTO;
 using Shop.Core.Repositories;
-using AutoMapper;
-using Shop.Core.Mapper;
 
 namespace Shop.Core.Services
 {
@@ -14,7 +13,8 @@ namespace Shop.Core.Services
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
 
-        public ProductService(IProductRepository productRepository, IMapper mapper)
+        public ProductService(IProductRepository productRepository,
+                IMapper mapper)
         {
             _productRepository = productRepository;
             _mapper = mapper;
